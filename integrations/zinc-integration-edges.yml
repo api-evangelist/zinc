@@ -1,0 +1,42 @@
+generated: '2026-10-14'
+method: searched
+checked:
+- bamboohr/integrations/bamboohr-integration-edges.yml
+- greenhouse/integrations/greenhouse-integration-edges.yml
+source:
+- bamboohr/integrations/bamboohr-integration-edges.yml
+- greenhouse/integrations/greenhouse-integration-edges.yml
+edges:
+- partner_name: BambooHR (own)
+  partner: bamboohr
+  partner_match: mirror
+  mirror_match: domain
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: own
+  evidence: https://www.bamboohr.com/integrations/listings/zinc
+  mirror_of: bamboohr/integrations/bamboohr-integration-edges.yml
+  apps:
+  - Zinc
+  listing_count: 1
+  detected: '2026-10-14'
+  detected_by: mirror-platform-listings.py
+  category: Background Checks
+- partner_name: Greenhouse (own)
+  partner: greenhouse
+  partner_match: mirror
+  mirror_match: domain
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: own
+  evidence: https://integrations.greenhouse.com/partners/zinc
+  mirror_of: greenhouse/integrations/greenhouse-integration-edges.yml
+  apps:
+  - Zinc
+  listing_count: 1
+  detected: '2026-10-14'
+  detected_by: mirror-platform-listings.py
